@@ -1,0 +1,179 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.container--flex {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    justify-content: space-around;
+}
+
+.container {
+    width: 150px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.grow:hover {
+    animation: grow 1s;
+}
+
+@keyframes grow {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+}
+
+.shrink:hover {
+    animation: shrink 1s; 
+}
+
+@keyframes shrink {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes squash {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+
+    75% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.squash:hover {
+    animation: squash 1s;
+    cursor: pointer;
+}
+
+
+  @keyframes spin {
+      from {
+          transform: rotateY(0deg);
+          
+      }
+
+      50% {
+        transform: rotateY(150deg);
+        
+    }
+
+    from {
+        transform: rotateY(0deg);
+        
+    }
+  }
+
+  .spin:hover {
+      animation: spin 1s;
+      cursor: pointer;
+  }
+
+  @keyframes flip {
+      from {
+          transform: rotateX(0);
+      }
+
+      50% {
+          transform: rotateX(150deg);
+      }
+
+      to {
+          transform: rotateX(0);
+      }
+  }
+
+  .flip:hover {
+      animation: flip 1s;
+  }
+
+  @keyframes shake {
+    from {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(10deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transfrom: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+.shake:hover {
+    animation: shake 0.5s;
+}
