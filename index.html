@@ -4,20 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="styles/styleTransitions.css">
+    <link rel="stylesheet" href="styles/animeTransitions.css">
     <title>Document</title>
    
 </head>
 <body>
-    <div class="container--flex container--one">
-        <div class="container grow" id="container">grow</div>
-        <div class="container shrink" id="container">shrink</div>
-        <div class="container squash" id="container">rubberband</div>
-    </div>
-    <div class="container--flex container--one">
-        <div class="container spin" id="container">spin</div>
-        <div class="container flip" id="container">flip</div>
-        <div class="container shake" id="container">shake</div>
-    </div>
+    <header class="container--flex">
+        <nav class="container--flex">
+            <ul>
+                <li><a href="entrances.html">Entrances</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section--one section--visible" id="section-one">
+        <div class="container--flex container--one">
+            <div class="container grow" id="container"><p class="para--trans">grow</p></div>
+            <div class="container shrink" id="container"><p class="para--trans">shrink</p></div>
+            <div class="container squash" id="container"><p class="para--trans">rubber band</div>
+        </div>
+        <div class="container--flex container--two">
+            <div class="container spin" id="container"><p class="para--trans">spin</div>
+            <div class="container flip" id="container"><p class="para--trans">filp</div>
+            <div class="container shake" id="container"><p class="para--trans">shake</div>
+        </div>
+    </section>
+    <!-- <section class="section--two section--hidden" id="section-two">
+        <div class="container--flex wrapper--large">
+            <div class="container--flex container__middle--medium">
+                <div class="container--flex container__middle--small drop">
+                    <p class="para--entrance">drop</p>
+                </div>
+                <div class="container--flex container__middle--small bounce">
+                    <p class="para--entrance">bounce</p>
+                </div>
+                <div class="container--flex container__middle--small fade-in">
+                    <p class="para--entrance">fade in</p>
+                </div>
+                <div class="container--flex container__middle--small wiggle">
+                    <p class="para--entrance">wiggle</p>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>

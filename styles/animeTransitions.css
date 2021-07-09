@@ -1,0 +1,302 @@
+
+/* Page Transitions */
+/* Section 1 */
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(2000px) scale(0.7);
+      opacity: 0.7;
+  }
+
+  80% {
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+  }
+
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  } 
+}    
+
+
+
+.slideInRight {
+  animation: slideInRight 2s;
+} 
+
+
+/* section 1 transitions */
+
+.grow:hover {
+    animation: grow 1s;
+}
+
+@keyframes grow {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+}
+
+.shrink:hover {
+    animation: shrink 1s; 
+}
+
+@keyframes shrink {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes squash {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+
+    75% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.squash:hover {
+    animation: squash 1s;
+    cursor: pointer;
+}
+
+
+  @keyframes spin {
+      from {
+          transform: rotateY(0deg);
+          
+      }
+
+      50% {
+        transform: rotateY(150deg);
+        
+    }
+
+    from {
+        transform: rotateY(0deg);
+        
+    }
+  }
+
+  .spin:hover {
+      animation: spin 1s;
+      cursor: pointer;
+  }
+
+  @keyframes flip {
+      from {
+          transform: rotateX(0);
+      }
+
+      50% {
+          transform: rotateX(150deg);
+      }
+
+      to {
+          transform: rotateX(0);
+      }
+  }
+
+  .flip:hover {
+      animation: flip 1s;
+  }
+
+  @keyframes shake {
+    from {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(10deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transfrom: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+.shake:hover {
+    animation: shake 0.5s;
+}
+
+/* Section 2 entrances */
+
+@keyframes drop {
+    from,
+    to{
+        animation-timing-function: cubic-bezier(1, 0, 0, 0);
+    }
+    0% {
+        transform: translate3d(0, -1000px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.drop {
+    animation: drop 6s;
+}
+
+
+@keyframes bounce {
+    
+    from,
+    60%,
+    75%,
+    85%,
+    90%,
+    to {
+      animation-timing-function: cubic-bezier(1, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0) scaleY(3);
+      display: none;
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scaleY(0.9);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0) scaleY(0.95);
+    }
+  
+    85% {
+      transform: translate3d(0, 0, 0) scaleY(0.985);
+    }
+
+    90% {
+        transform: translate3d(0, -5px, 0) scaleY(0.999);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 6s;
+    
+  }
+
+ 
+    @keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  } 
+
+.fade-in {
+    animation: fadeIn 6s ease-in;
+}
+
+  @keyframes wiggle {
+    0% {
+      transform: translate3d(0, 1000px, 0);
+    }
+
+    20% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    30% {
+      transform: translate3d(-10px, 0, 0);
+    }
+
+    40% {
+      transform: translate3d(10px, 0, 0);
+    }
+
+    50% {
+      transform: translate3d(-8px, 0, 0);
+    }
+
+    60% {
+      transform: translate3d(8px, 0, 0);
+    }
+
+    70% {
+      transform: translate3d(-6px, 0, 0);
+    }
+
+    80% {
+      transform: translate3d(6px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+  }
+
+  .wiggle {
+    animation: wiggle 6s ease-in;
+  }
