@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+
+
+/* ================================== Type ======================================= */
+
+p {
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* ================================== Containers ================================= */
+
+.container--flex {
+    display: flex;
+}
+
+section {
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* ================================= Layout ====================================== */
+
+/* ================================= Header/Nav ================================== */
+
+header {
+    background-color: black;
+    color: white;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-bottom: 2em;
+}
+
+nav {
+    margin: 2em 3em 0 2em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* ======================================= Containers =================================== */
+
+.wrapper--large {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__middle--medium {
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__middle--small {
+    flex-direction: column;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+
+
+
+
+  
+
+  

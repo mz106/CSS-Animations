@@ -1,0 +1,136 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    /* border: 3px solid red; */
+    text-align: center;
+}
+
+
+
+/* ================================== Type ======================================= */
+
+.para--trans {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para--entrance {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* ================================== Containers ================================= */
+
+.container--flex {
+    display: flex;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: black; */
+}
+
+/* ================================= Page Transitions ============================ */
+
+.section--hidden {
+    display: none;
+}
+
+.section--visible {
+    display: flex;
+}
+
+/* ================================= Layout ====================================== */
+
+/* ================================= Header/Nav ================================== */
+
+header {
+    background-color: black;
+    color: white;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-bottom: 2em;
+}
+
+nav {
+    margin: 2em 3em 0 2em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Transitions Section 1 */
+
+.container--one,
+.container--two {
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.container--two {
+    margin-bottom: 8em;
+}
+
+.container {
+    width: 20vh;
+    height: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.container:nth-child(2) {
+    margin-bottom: 3em;
+}
+
+.para--trans {
+    width: 100%;
+    height: 100%;
+}
+
+/* Entrances Section 2 */
+.wrapper--large {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__middle--medium {
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__middle--small {
+    flex-direction: column;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+}
+
